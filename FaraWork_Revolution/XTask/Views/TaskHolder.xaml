@@ -24,9 +24,10 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-
-
     </UserControl.Resources>
+    <UserControl.DataContext>
+        <DTVM:TaskHolderViewModel/>
+    </UserControl.DataContext>
     <Grid Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -46,7 +47,7 @@
 
         <!--Mid Area-->
         <Grid Grid.Row="1" Background="Transparent">
-            <ListView ItemsSource="{Binding Tasks}" ScrollViewer.CanContentScroll="False" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
+            <ListView Name="MlistView" ItemsSource="{Binding Tasks}" ScrollViewer.CanContentScroll="False" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid >

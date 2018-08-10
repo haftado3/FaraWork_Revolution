@@ -151,8 +151,12 @@
     <Compile Include="Mvvm\DelegateCommand.cs" />
     <Compile Include="Navigation\Navigation.cs" />
     <Compile Include="Services\Notification\NotificationService.cs" />
+    <Compile Include="XTask\DragNDrop\DragAdorner.cs" />
+    <Compile Include="XTask\DragNDrop\DragNDropManager.cs" />
+    <Compile Include="XTask\DragNDrop\MouseUtilities.cs" />
     <Compile Include="XTask\Entities\XTask.cs" />
     <Compile Include="XTask\ViewModels\TaskHolderSampleViewModel.cs" />
+    <Compile Include="XTask\ViewModels\TaskHolderViewModel.cs" />
     <Compile Include="XTask\Views\TaskHolder.xaml.cs">
       <DependentUpon>TaskHolder.xaml</DependentUpon>
     </Compile>

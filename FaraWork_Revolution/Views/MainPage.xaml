@@ -7,7 +7,7 @@
       xmlns:local="clr-namespace:FaraWork_Revolution.Views"
       xmlns:xtask="clr-namespace:FaraWork_Revolution.XTask.Views"
       mc:Ignorable="d"
-      Title="MainPage" Height="391.785" Width="565.156">
+      Title="MainPage">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
