@@ -16,12 +16,6 @@ namespace FaraWork_Revolution
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        private readonly NotificationManager _notificationManager = new NotificationManager();
-        public void NativeNotification(string title,string message,NotificationType type)
-        {
-            var content = new NotificationContent { Title = title, Message = message, Type = NotificationType.Information };
-            _notificationManager.Show(content, "WindowArea", onClick: () => _notificationManager.Show(content));
-        }
         public MainWindow()
         {
             InitializeComponent();
@@ -34,7 +28,8 @@ namespace FaraWork_Revolution
 
         private async void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
-            NotificationService.NativeNotification("sss", "sss", "sss");
+            //NotificationService.NativeNotification("ee", "ee", "WindowArea");
+            //NotificationService.SimpleNotification("whatever", "dumb shit", NotificationType.Error);
             Navigation.Navigation.Navigate(new Uri("Views/MainPage.xaml", UriKind.RelativeOrAbsolute));
             try
             {

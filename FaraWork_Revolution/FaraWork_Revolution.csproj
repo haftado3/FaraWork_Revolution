@@ -260,6 +260,7 @@
   <ItemGroup>
     <Folder Include="Services\EncryptService\" />
     <Folder Include="Services\Loading\" />
+    <Folder Include="Services\RegisterService\" />
     <Folder Include="Services\SingleInstance\" />
   </ItemGroup>
   <ItemGroup>

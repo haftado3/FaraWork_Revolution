@@ -25,14 +25,14 @@ namespace FaraWork_Revolution.Services.Notification
         public static void NativeNotification(string title, string message,string area)
         {
             NotificationManager _notificationManager = new NotificationManager();
-            var content = new NotificationContent { Title = "Notification in window", Message = "Click me!" };
+            var content = new NotificationContent { Title = title, Message = message };
             var clickContent = new NotificationContent
             {
                 Title = "Clicked!",
                 Message = "Window notification was clicked!",
                 Type = NotificationType.Success
             };
-            _notificationManager.Show(content, "WindowArea", onClick: () => _notificationManager.Show(clickContent));
+            _notificationManager.Show(content, area, onClick: () => _notificationManager.Show(clickContent));
         }
     }
 }
